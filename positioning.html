@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <style>
+    html {
+      height: 8000px;
+    }
+    .block {
+      height: 200px;
+      width: 500px;
+      border: 1px solid #333;
+      margin: 15px;
+      padding: 15px;
+    }
+    .static {
+      background-color: #5af7fc;
+    }
+
+    .relative {
+      background-color: #00ff9d;
+      position: relative;
+      left: 100px;
+      top: -25px;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 10px;
+      left: 500px;
+      background-color: yellow;
+      z-index: 999;
+    }
+
+    .absolute {
+      position: absolute;
+      top: 10px;
+      right: 200px;
+      background-color: yellow;
+    }
+
+    .fixed {
+      background-color: #c254d3;
+      position: fixed;
+      bottom: 5px;
+      right: 10px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="block static">
+    <h4>Static = Default Positioning</h4>
+  </div>
+  <!-- Static Div ENDS -->
+
+  <div class="block absolute">
+    <h4>Absolute</h4>
+    <p>I am positioned to the viewport or window</p>
+  </div>
+    <!-- Absolute Div ENDS -->
+
+  <div class="block fixed">
+    <h4>Fixed Positioning</h4>
+    <p>I am fixed, even if you scroll, I am positioned relative to the accesskey="
+      veiwport or window"</p>
+  </div>
+    <!-- Fixed Div ENDS -->
+
+  <div class="block relative">
+    <h4>Relative Positioning</h4>
+    <p>I am positioned relative to where I am usually placed</p>
+  </div>
+    <!-- Relative Div ENDS -->
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+</body>
+</html>
