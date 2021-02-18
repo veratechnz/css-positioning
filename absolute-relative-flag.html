@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <!-- Custom css always comes last in our workflow of css files/libraries -->
+  <link rel="stylesheet" href="css/custom.css">
+</head>
+<body>
+  <h1>Hello World</h1>
+
+
+  <div class="flag" id="flag">
+    <i class="fa fa-star star-one" aria-hidden="true"></i>
+    <div class="flag-stick"></div>
+  </div>
+
+  <button id="trigger">Play Anthem</button>
+
+
+  <!-- Flag ENDS -->
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script>
+
+    // Wait until the document is ready
+    $(document).ready(function(){
+
+      // Get the trigger or button then add a click event
+      $('#trigger').click(function(){
+
+        // $('.').hide(4000);
+        var audio = new Audio('music/anthem.mp3');
+        audio.play();
+
+
+      });
+      // click function ENDS
+
+    });
+    // document.ready ENDS
+
+  </script>
+</body>
+</html>
